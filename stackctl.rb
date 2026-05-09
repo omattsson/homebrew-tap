@@ -5,21 +5,21 @@
 class Stackctl < Formula
   desc "CLI for managing Kubernetes stack deployments via k8s-stack-manager"
   homepage "https://github.com/omattsson/stackctl"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/omattsson/stackctl/releases/download/v0.1.0/stackctl_0.1.0_darwin_amd64.tar.gz"
-      sha256 "193d0bd4536f96d16d5dc6f3d7038f9c9fe4a6cc09ced9dfba9f2ef7597ed097"
+      url "https://github.com/omattsson/stackctl/releases/download/v0.2.0/stackctl_0.2.0_darwin_amd64.tar.gz"
+      sha256 "d6db3886292ee067e9d7807bcbd6b5b4deae324f20d69954335196bb64ea90a4"
 
       def install
         bin.install "stackctl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/omattsson/stackctl/releases/download/v0.1.0/stackctl_0.1.0_darwin_arm64.tar.gz"
-      sha256 "e304b3cfa3001c3387f8b6917f0c847cacd73897f5bb11812ae8d6793628d951"
+      url "https://github.com/omattsson/stackctl/releases/download/v0.2.0/stackctl_0.2.0_darwin_arm64.tar.gz"
+      sha256 "7a346c3ff550dcf1abc282b8d8d906b9b1f27a8248d2ba317165e796b41aeb20"
 
       def install
         bin.install "stackctl"
@@ -30,8 +30,8 @@ class Stackctl < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/omattsson/stackctl/releases/download/v0.1.0/stackctl_0.1.0_linux_amd64.tar.gz"
-        sha256 "8054db67404680e96c8c69a56830bd49d4a76cf922f383f94ffb09cd46099843"
+        url "https://github.com/omattsson/stackctl/releases/download/v0.2.0/stackctl_0.2.0_linux_amd64.tar.gz"
+        sha256 "73c43cd374adbe797b9d319799472d3355ec81ca831f57fc3f6d8d6890ed523b"
 
         def install
           bin.install "stackctl"
@@ -40,8 +40,8 @@ class Stackctl < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/omattsson/stackctl/releases/download/v0.1.0/stackctl_0.1.0_linux_arm64.tar.gz"
-        sha256 "037c99c78fe51f10333f01df61d7d4d02f2c0552576523d4ca3d8fd284ffb1ab"
+        url "https://github.com/omattsson/stackctl/releases/download/v0.2.0/stackctl_0.2.0_linux_arm64.tar.gz"
+        sha256 "2eba4b7e3c4290a3e27da29f7539c7ce282b518212b81d83105b85c6d2bc5162"
 
         def install
           bin.install "stackctl"
