@@ -6,25 +6,25 @@ cask "stackctl" do
     end
   end
 
-  version "0.8.0"
+  version "0.9.0"
 
   on_macos do
     on_arm do
-      sha256 "97b252533bac516aab1811ed0f57ac6e886c13ec6b8344faf2c5c2dc5bad20b7"
+      sha256 "b5ea159e12a4f5ce9e720a30fab5571f0e261fad7fb479bde9ff1400b9a7f5bb"
       url "https://github.com/omattsson/stackctl/releases/download/v#{version}/stackctl_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "4cddf2b62a33363cc85394e9f2dc9d087a9e4cc293b5149069c7d0a61c582dcd"
+      sha256 "99582f817d5b14465634d7f70d66a4c86cad7197c9fb680e57838eb4727e69c0"
       url "https://github.com/omattsson/stackctl/releases/download/v#{version}/stackctl_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "e092bca59c522df23be10d4d16fc145ca112558239cd7b87f98cec9254e1d7c7"
+      sha256 "2ca574776bc9ce5978427a847e02f46a726526fb56e204e2dab03c43c0ec7cd4"
       url "https://github.com/omattsson/stackctl/releases/download/v#{version}/stackctl_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "a2e9736ff62b2a6e463514812fa9438f03a579cd03cf2df79cfc07a94227c9d9"
+      sha256 "1d01d2414bb45fab5a2d7e11fd544e13b01475dd429435cf17f4de548fdd30ea"
       url "https://github.com/omattsson/stackctl/releases/download/v#{version}/stackctl_#{version}_linux_amd64.tar.gz"
     end
   end
